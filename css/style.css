@@ -1,0 +1,176 @@
+:root {
+    --bluetto: #6666ff;
+    --giallo: #f5dd3e;
+    --rosa: #c07b83;
+    --verde-acqua: #4eedce;
+    --azzurro: #73d7e9;
+}
+
+body {
+    font-family: 'Comic Neue', sans-serif;
+    background-image: linear-gradient(to right,  var(--azzurro), var(--verde-acqua));
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+    color: var(--bluetto);
+}
+
+.special-text {
+    font-family: 'Freckle Face', cursive;
+
+}
+
+.topbar{
+    background-color: var(--bluetto);
+    padding: 10px;
+    text-align: center;
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+}
+
+.topbar img{
+    height: 3vh;
+    
+}
+
+.topbar img:hover{
+    cursor: pointer;
+}
+
+.topbar h1{
+    color: var(--giallo);
+    font-size: 2.5vh;
+    margin: 0;
+}
+
+.desktop{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vh;
+    padding: 2vh;
+    width: min-content;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    object-fit: cover;
+    user-select: none;
+}
+
+.app:hover 
+{
+    cursor: pointer;
+    backdrop-filter: brightness(80%);
+}
+
+.app img{
+    width: 18vh;
+    
+}
+
+.app p{
+    font-family: 'Freckle Face', cursive;
+    font-size: 2vh;
+    color: var(--bluetto);
+}
+
+
+.window {
+    position: absolute;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 60vh;
+    height: 30vh;
+    
+    margin: 2vh auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+.windowTop {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1vh;
+    background-color: #c07b83;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.windowTop img {
+    width: 2vh;
+    height: 2vh;
+    margin-left: 1vh;
+    cursor: pointer;
+    user-select: none;
+
+    
+}
+
+.windowTop img:hover {
+    filter: brightness(80%);
+}
+
+.windowContent {
+    padding: 2vh;
+    overflow-y: scroll;
+}
+
+.windowContent h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3vh;
+    color: #333;
+    margin-bottom: 1vh;
+}
+
+.windowContent p {
+    font-family: 'Arial', sans-serif;
+    font-size: 2vh;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* About page */
+#about-content img {
+    width: 100%;
+    height: auto;
+    margin: 1vh 0;
+}
+
+.maximized #about-content {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.maximized #about-content h2{
+    font-size: 5vh;
+}
+
+.maximized #about-content p {
+    width: 50%;
+    margin: 1vh 0;
+}
+
+.maximized #about-content img {
+    width: 60vh;
+    height: auto;
+    margin: 1vh 0;
+    
+}
+
+/* Project page */
+
