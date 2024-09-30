@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isDragging = false;
     let offsetX, offsetY;
 
-    // Funzione di trascinamento
+    // Mouve la finestra
     
 
     document.addEventListener('mousemove', (e) => {
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isDragging = false;
     });
 
-    // Gestione del click sulle app
+    // Apertura finestra
     apps.forEach(app => {
         app.addEventListener('click', () => {
             const contentId = app.getAttribute('data-content-id');
